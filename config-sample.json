@@ -1,0 +1,51 @@
+{
+    "app": {
+        "port": 3000,
+        "contact": "you@email.com",
+        "open": true,
+        "providers": ["agency1","agency2"]
+    },
+    "gtfs": {
+      "agency1": {
+        "agencies": [
+          {
+            "url": "...",
+            "exclude": [],
+            "rtupdates": [
+              "...",
+              "...",
+              "..."
+            ]
+          }
+        ],
+        "csvOptions": {
+          "skip_lines_with_error": true
+        },
+        "sqlitePath": "./databases/agency1.sqlite"
+      },
+      "agency2": {
+        "agencies": [
+          {
+            "url": "...",
+            "exclude": [],
+            "rtupdates": [
+              "...",
+              "...",
+              "..."
+            ]
+          }
+        ],
+        "csvOptions": {
+          "skip_lines_with_error": true
+        },
+        "sqlitePath": "./databases/agency2.sqlite"
+      }      
+    },
+    "keys": {
+      "testkey": {
+        "active": true,
+        "limit": -1,
+        "current": 0
+      }
+    }   
+}

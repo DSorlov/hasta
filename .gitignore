@@ -1,0 +1,7 @@
+databases/*
+node_modules
+config*.json
+!config-sample*.json
+gtfs-export
+.git
+.vscode
